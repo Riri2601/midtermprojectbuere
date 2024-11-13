@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richelle Buere's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav id="desktop-nav">
+        <div class="logo">Richelle Buere</div>
+        
+        <!-- Hamburger Icon for Mobile -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="profile">
+            <img src="New folder/coor.jpg" alt="Richelle Buere">
+            <h1>Richelle Buere</h1>
+            <p>Creative Designer & Aspiring Developer</p>
+        </div>
+        <button class="btn btn-color-2" onclick="window.open('New folder/richellebuere.pdf')">Download CV</button>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I'm a third-year student majoring in computer science with experience in design, advertising, and project management. My area of expertise is developing designs that meet user goals while being both aesthetically pleasing and useful.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Skills & Projects</h2>
+        <table class="skills-projects-table">
+            <tr>
+                <th>Skills</th>
+                <th>Projects</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>HTML Competence</li>
+                        <li>CSS Basic to Mid expert</li>
+                        <li>WPS Competence</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Working POS</li>
+                        <li>Calculator</li>
+                        <li>Website Redesign Project</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Social Media and Email Links Table -->
+    <section id="contact" class="contact-links">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-box">
+            <a href="richellebuere@gmail.com" class="contact-link">
+                <span class="icon">📧</span>
+                richellebuere@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/richelle-buere-733648337/" target="_blank" class="contact-link">
+                <span class="icon">🔗</span>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <form action="https://formspree.io/f/mbljygor" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button class="btn btn-color-1" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Richelle Buere. All rights reserved.</p>
+    </footer>
+</body>
+</html>
